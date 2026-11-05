@@ -1,5 +1,7 @@
 # 🍗 Bahraini Food Detector 🍳
 
+**Live demo:** ([Bahraini Food Detector App](https://bahrainifoodobjectdetector.streamlit.app/))
+
 An object detection model that recognizes Bahraini dishes in photos and live camera video. It is a YOLO model fine-tuned on a custom Roboflow dataset, with a Streamlit web app for trying it out.
 
 ## Features
