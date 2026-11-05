@@ -127,7 +127,7 @@ print(metrics.box.mp, metrics.box.mr)
 
 - **Live camera:** click *Start*, allow camera access, and detections are drawn on the video stream.
 - **Upload photo:** upload a JPG or PNG and the annotated result is shown.
-- 
+
 ![App Food Detections](images/val_batch2_labels.jpg)
 
 ## Error Analysis
