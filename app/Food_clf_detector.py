@@ -6,7 +6,7 @@ from ultralytics import YOLO
 from PIL import Image
 
 model = YOLO(os.path.join(os.path.dirname(__file__), "best.pt"))
-st.title("Bahraini Food Detector")
+st.title("🍗Bahraini Food Detector🍳")
 mode = st.radio("Choose input", ["Live camera", "Upload photo"], horizontal=True)
 
 if mode == "Live camera":
