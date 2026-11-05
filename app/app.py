@@ -14,7 +14,7 @@ st.set_page_config(
 # Load trained model
 @st.cache_resource
 def load_model():
-    return YOLO("bestbest.pt")
+    return YOLO("best.pt")
 
 st.title("🪙Bahraini Currency Detection🪙")
 
@@ -22,10 +22,10 @@ st.write(
     "Detect Bahraini currency using a YOLO26 deep learning model."
 )
 
-model_path = Path("bestbest.pt")
+model_path = Path("best.pt")
 
 if not model_path.exists():
-    st.error("Model file 'bestbest.pt' not found.")
+    st.error("Model file 'best.pt' not found.")
     st.stop()
 
 model = load_model()
