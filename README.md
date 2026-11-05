@@ -44,7 +44,7 @@ An object detection model that recognizes Bahraini dishes in photos and live cam
               samboosa    
                  tikka
 
-Class balance and annotation quality notes: _add your findings from the notebook (images per class, average objects per image, any imbalance)._
+Class balance and annotation quality notes: 
 
 ## Model and Training
 
