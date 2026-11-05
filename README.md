@@ -15,12 +15,22 @@ An object detection model that recognizes Bahraini dishes in photos and live cam
 
 ```
 .
-├── bahraini_food.py      # Dataset exploration, training, evaluation, error analysis
-├── app.py                # Streamlit app (live camera + photo upload)
-├── best.pt               # Trained model weights (place next to app.py)
-├── requirements.txt      # App dependencies
+├── app/
+│   ├── Food_clf_detector.py              # Streamlit app (live camera + photo upload)
+│   ├── best.pt             # Trained model weights
+│   └── requirements.txt    # App dependencies
+├── Code/                   # Model training, evaluation, and error analysis
+├── images/                 # Images used in the project and README
+├── packages.txt            # System libraries for Streamlit Cloud (libgl1, libglib2.0-0)
 └── README.md
 ```
+
+### Folder Notes
+
+- **`app/`**: Everything needed to run the Streamlit app. `best.pt` must stay in the same folder as `app.py`.
+- **`Code/`**: Scripts for training the model, evaluating it, and analyzing errors. Not needed to run the app.
+- **`images/`**: Images used in the project and README.
+- **`packages.txt`**: System packages installed by Streamlit Community Cloud. Must be in the repo root.
 
 ## Dataset
 
