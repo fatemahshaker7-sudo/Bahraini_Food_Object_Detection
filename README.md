@@ -1,4 +1,4 @@
-# Bahraini Food Detector
+# 🍗 Bahraini Food Detector 🍳
 
 An object detection model that recognizes Bahraini dishes in photos and live camera video. It is a YOLO model fine-tuned on a custom Roboflow dataset, with a Streamlit web app for trying it out.
 
