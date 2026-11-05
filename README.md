@@ -32,7 +32,17 @@ An object detection model that recognizes Bahraini dishes in photos and live cam
 | Valid | 20% |
 | Test  | 10% |
 
-**Classes:** _list your classes here_
+**Classes:**     
+           Halwa          
+           Khanfaroosh        
+             Safi Fish          
+              balaleet       
+            egg tomato      
+                harees       
+    macarona altaybeen         
+                nakhaj         
+              samboosa    
+                 tikka
 
 Class balance and annotation quality notes: _add your findings from the notebook (images per class, average objects per image, any imbalance)._
 
