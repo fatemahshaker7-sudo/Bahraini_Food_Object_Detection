@@ -112,7 +112,7 @@ metrics = model.val(data="Bahrain_Foods-2/data.yaml", split="test")
 print(metrics.box.mp, metrics.box.mr)
 ```
 
-![Confusion detections](confusion_matrix_normalized.png)
+![Confusion detections](images/confusion_matrix_normalized.png)
 
 ## Getting Started
 
