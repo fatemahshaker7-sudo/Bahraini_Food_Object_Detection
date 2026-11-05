@@ -112,7 +112,7 @@ metrics = model.val(data="Bahrain_Foods-2/data.yaml", split="test")
 print(metrics.box.mp, metrics.box.mr)
 ```
 
-The confusion matrix is saved to `metrics.save_dir/confusion_matrix_normalized.png`.
+![Confusion detections](confusion_matrix_normalized.png)
 
 ## Getting Started
 
