@@ -102,7 +102,7 @@ The confusion matrix is saved to `metrics.save_dir/confusion_matrix_normalized.p
 ### 1. Train in Google Colab
 
 1. Open `bahraini_food.py` in Colab.
-2. Add your Roboflow API key as a Colab secret named `ROBOFLOW_KEY` (**never paste the key into the notebook**).
+2. Add your Roboflow API key as a Colab secret named `ROBOFLOW_KEY`.
 3. Run the cells in order. Weights are saved under `runs/detect/<run>/weights/` (`best.pt`, `last.pt`).
 
 
