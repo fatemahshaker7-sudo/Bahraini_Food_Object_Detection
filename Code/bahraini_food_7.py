@@ -12,7 +12,12 @@ Original file is located at
 import matplotlib.pyplot as plt
 import numpy as np
 from roboflow import Roboflow
-import os
+import os , random
+from collections import Counter
+import pandas as pd
+import glob
+from IPython.display import Image, display
+from ultralytics import YOLO
 
 rf = Roboflow(api_key="TkOu1KkaaAOMzeprhbrO")
 project = rf.workspace("sara-dhaif").project("bahrain_foods-dyyn5")
@@ -36,11 +41,6 @@ len(images_val)
 images_test = os.listdir("/content/Bahrain_Foods-1/test/images")
 len(images_test)
 
-from collections import Counter
-
-import pandas as pd
-import glob
-
 labels = glob.glob("/content/Bahrain_Foods-1/train/labels/*.txt")
 
 classes = []
@@ -52,10 +52,7 @@ for file in labels:
 
 pd.Series(classes).value_counts().sort_index()
 
-from ultralytics import YOLO
 model = YOLO("yolo26s.pt")
-
-
 
 model.train(data = "/content/Bahrain_Foods-2/data.yaml", epochs = 10)
 
@@ -71,7 +68,6 @@ results = fintuned_model("/content/Bahrain_Foods-2/test/images/Tikka_5_jpeg.rf.a
 plt.imshow(results[0].plot()[...,::-1])
 
 ## Evaluation
-from IPython.display import Image, display
 # per class performance
 metrics = fintuned_model.val(data="/content/Bahrain_Foods-2/data.yaml", split="test")
 # precision
@@ -85,7 +81,6 @@ fintuned_model_1 = YOLO("/content/runs/detect/train/weights/last.pt")
 fintuned_model_1.train(data = "/content/Bahrain_Foods-2/data.yaml", epochs = 10)
 
 ## Evaluation
-from IPython.display import Image, display
 # per class performance
 metrics = fintuned_model_1.val(data="/content/Bahrain_Foods-2/data.yaml", split="test")
 # precision
@@ -99,7 +94,6 @@ fintuned_model_2 = YOLO("/content/runs/detect/train-2/weights/last.pt")
 fintuned_model_2.train(data = "/content/Bahrain_Foods-2/data.yaml", epochs = 30)
 
 ## Evaluation
-from IPython.display import Image, display
 # per class performance
 metrics = fintuned_model_2.val(data="/content/Bahrain_Foods-2/data.yaml", split="test")
 # precision
@@ -111,8 +105,6 @@ display(Image(f"{metrics.save_dir}/confusion_matrix_normalized.png"))
 
 display(Image(f"{metrics.save_dir}/val_batch0_labels.jpg"))  # true labels
 display(Image(f"{metrics.save_dir}/val_batch0_pred.jpg"))    # predictions
-
-import os, random, matplotlib.pyplot as plt
 
 names = fintuned_model_2.names
 wrong = []
@@ -128,8 +120,6 @@ for img, gt, pr in random.sample(wrong, min(6, len(wrong))):
     plt.figure(figsize=(6, 6)); plt.imshow(img); plt.axis("off")
     plt.title(f"True: {gt}\nPred: {pr}", fontsize=9); plt.show()
 
-import matplotlib.pyplot as plt
-
 wrong = []
 for r in fintuned_model_2.predict("/content/Bahrain_Foods-2/test/images", stream=True, verbose=False):
     lbl = r.path.replace("/images/", "/labels/").rsplit(".", 1)[0] + ".txt"
@@ -142,4 +132,3 @@ fig, axes = plt.subplots(3, 3, figsize=(15, 15))
 for ax, (img, title) in zip(axes.flat, wrong[:9]):
     ax.imshow(img); ax.set_title(title, fontsize=9); ax.axis("off")
 plt.savefig("wrong_predictions.png")
-
