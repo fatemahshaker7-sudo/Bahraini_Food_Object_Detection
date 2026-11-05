@@ -46,6 +46,17 @@ An object detection model that recognizes Bahraini dishes in photos and live cam
 
 Class balance and annotation quality notes: 
 
+Halwa                 184
+nakhaj                137
+samboosa               86
+Khanfaroosh            73
+tikka                  50
+egg tomato             46
+harees                 46
+macarona altaybeen     40
+Safi Fish              40
+balaleet               40
+
 ## Model and Training
 
 - **Base model:** `yolo26s.pt` (Ultralytics)
