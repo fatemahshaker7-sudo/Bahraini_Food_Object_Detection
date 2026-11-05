@@ -23,7 +23,7 @@ An object detection model that recognizes Bahraini dishes in photos and live cam
 │   └── bahraini_food.py
 ├── images/                               # Images used in the project and README
 │   ├── confusion_matrix_normalized.png
-│   ├── val_batch2_pred.jpg 
+│   ├── val_batch2_labels.jpg
 │   ├── val_batch2_pred.jpg
 │   └── wrong_predictions.png
 ├── packages.txt                          # System libraries for Streamlit Cloud (libgl1, libglib2.0-0)
@@ -127,6 +127,8 @@ print(metrics.box.mp, metrics.box.mr)
 
 - **Live camera:** click *Start*, allow camera access, and detections are drawn on the video stream.
 - **Upload photo:** upload a JPG or PNG and the annotated result is shown.
+- 
+![App Food Detections](images/val_batch2_labels.jpg)
 
 ## Error Analysis
 
