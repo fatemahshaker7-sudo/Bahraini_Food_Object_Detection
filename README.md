@@ -84,9 +84,9 @@ Evaluated on the held-out test split.
 
 | Model | Precision | Recall | mAP50 | mAP50-95 |
 |-------|-----------|--------|-------|----------|
-| Fine-tuned (10 epochs) |0.79 | 0.90 | 0.7 | 0.7 |
-| Continued (10 + 10) | 0.88 | 0.89 | 0.73 | 0.71 |
-| Continued (10 + 30) | 0.92 | 0.92 | 0.8 | 0.75 |
+| Fine-tuned (10 epochs) |0.79 | 0.90 | 0.882 | 0.725 |
+| Continued (10 + 10) | 0.88 | 0.89 | 0.872 | 0.718 |
+| Continued (10 + 30) | 0.92 | 0.92 | 0.894 | 0.763 |
 
 Metrics come from:
 
