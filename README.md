@@ -17,11 +17,16 @@ An object detection model that recognizes Bahraini dishes in photos and live cam
 .
 ├── app/
 │   ├── Food_clf_detector.py              # Streamlit app (live camera + photo upload)
-│   ├── best.pt             # Trained model weights
-│   └── requirements.txt    # App dependencies
-├── Code/                   # Model training, evaluation, and error analysis
-├── images/                 # Images used in the project and README
-├── packages.txt            # System libraries for Streamlit Cloud (libgl1, libglib2.0-0)
+│   ├── best.pt                           # Trained model weights
+│   └── requirements.txt                  # App dependencies
+├── Code/                                 # Model training, evaluation, and error analysis
+│   └── bahraini_food.py
+├── images/                               # Images used in the project and README
+│   ├── confusion_matrix_normalized.png
+│   ├── val_batch2_pred.jpg 
+│   ├── val_batch2_pred.jpg
+│   └── wrong_predictions.png
+├── packages.txt                          # System libraries for Streamlit Cloud (libgl1, libglib2.0-0)
 └── README.md
 ```
 
