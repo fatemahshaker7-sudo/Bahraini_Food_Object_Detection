@@ -7,7 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1GY141ChjraUZa0ZrdjGEswSJZ3gadI_t
 """
 
-!pip install roboflow ultralytics
 
 import matplotlib.pyplot as plt
 import numpy as np
