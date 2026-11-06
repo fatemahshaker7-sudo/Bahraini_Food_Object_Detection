@@ -7,7 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1GY141ChjraUZa0ZrdjGEswSJZ3gadI_t
 """
 
-
 import matplotlib.pyplot as plt
 import numpy as np
 from roboflow import Roboflow
