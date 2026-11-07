@@ -1,6 +1,7 @@
 # 🍗 Bahraini Food Detector 🍳
 
 **Live demo:** [Bahraini Food Detector App](https://bahrainifoodobjectdetector.streamlit.app/)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fatemahshaker7-sudo/Bahraini_Food_Object_Detection/blob/main/Code/bahraini_food.ipynb)
 
 An object detection model that recognizes Bahraini dishes in photos and live camera video. It is a YOLO model fine-tuned on a custom Roboflow dataset, with a Streamlit web app for trying it out.
 
