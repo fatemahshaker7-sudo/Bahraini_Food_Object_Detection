@@ -143,7 +143,7 @@ The notebook includes a short snippet that runs the model over the test images a
 
 ## Tech Stack
 
-Python, Ultralytics YOLO, Roboflow, Streamlit, streamlit-webrtc, OpenCV / PIL, Matplotlib
+Python, Ultralytics YOLO, Roboflow, Streamlit, streamlit-webrtc, PIL, Matplotlib
 
 ## Acknowledgments
 
