@@ -148,3 +148,7 @@ Python, Ultralytics YOLO, Roboflow, Streamlit, streamlit-webrtc, PIL, Matplotlib
 ## Acknowledgments
 
 Dataset annotated and hosted on Roboflow. Model built with Ultralytics YOLO.
+
+- **Fatema Butaher**: ![Contributors](https://img.shields.io/github/contributors/FatemaButaher/Bahraini_Food_Object_Detection)
+- **Sara**: [![Contributors](https://img.shields.io/badge/Contributors-View%20all-181717?logo=github&logoColor=white)](https://github.com/saradhaif/Bahraini_Food_Object_Detection/graphs/contributors)
+- **Fatemah Shaker**: [![Contributors](https://contrib.rocks/image?repo=fatemahshaker7-sudo/Bahraini_Food_Object_Detection)](https://github.com/fatemahshaker7-sudo/Bahraini_Food_Object_Detection/graphs/contributors)
